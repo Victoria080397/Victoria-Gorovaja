@@ -678,10 +678,11 @@ header .transparent_button {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/images/image%2069.png);
+    padding-bottom: 140px;
 }
 
 .address h2 {
-    margin-top: 87px;
+    margin-top: 187px;
     margin-bottom: 60px;
     font-size: 42px;
     line-height: 49px;
@@ -781,4 +782,37 @@ footer .transparent_button {
     font-size: 14px;
     letter-spacing: 0.02em;
     border: 1px solid #fff;
-} 
+}
+
+.book .left {
+    position: absolute;
+    width: 50%;
+    padding-right: 80px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.book .left img {
+    position: relative;
+    transform: translateY(34%); 
+}
+
+.book .left::before {
+    content: '';
+    width: 50vw;
+    z-index: -1;
+    height: 50%;
+    background: #2F2E2F;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    transform: translateX(200px);
+}
+
+.book .right {
+    padding-bottom: 90px;
+}
+
+.book_content p:not(:last-child) {
+    padding-bottom: 40px;
+}
