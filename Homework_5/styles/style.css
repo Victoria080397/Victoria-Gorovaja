@@ -351,10 +351,31 @@ header .transparent_button {
     align-items: center;
 }
 
+.news .name img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
 .news .item h3 {
     font-size: 15px;
     line-height: 22px;
     padding-left: 10px;
+}
+
+.news .item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 78px;
+    height: 24px;
+    background: #9A8464;
+    z-index: 5;
+}
+
+.news .item img {
+    position: relative;
 }
 
 .news strong {
@@ -691,6 +712,7 @@ header .transparent_button {
 }
 
 .address .container_common {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-right: auto;
@@ -698,6 +720,21 @@ header .transparent_button {
     width: 1170px;
     height: 556px;
     background-color: #fff;
+    /*    border: 1px solid black;*/
+    border-radius: 4px;
+}
+
+.address .container_common::after {
+    content: '';
+    width: 1126px;
+    height: 547px;
+    border-radius: 4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    transform: translateY(3%) translateX(20px);
+    z-index: -5;
+
 }
 
 .container_common .container_1 {
@@ -784,6 +821,11 @@ footer .transparent_button {
     border: 1px solid #fff;
 }
 
+footer .social_icons a path {
+    transition: all .4s;
+}
+
+
 .book .left {
     position: absolute;
     width: 50%;
@@ -794,7 +836,7 @@ footer .transparent_button {
 
 .book .left img {
     position: relative;
-    transform: translateY(34%); 
+    transform: translateY(34%);
 }
 
 .book .left::before {
@@ -815,4 +857,65 @@ footer .transparent_button {
 
 .book_content p:not(:last-child) {
     padding-bottom: 40px;
+}
+
+
+
+
+.rules h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+}
+
+.rules .rules_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 136px;
+}
+
+.rules .rule {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 370px;
+    height: 430px;
+    color: #fff;
+    background-color: #2F2E2F;
+    border-radius: 4px;
+}
+
+.rules .rule span {
+    position: absolute;
+    font-size: 160px;
+    line-height: 187px;
+    color: #000000;
+    opacity: 0.1;
+    transform: translateX(50%) translateY(-60%);
+    z-index: -5;
+}
+
+.rules .rule h3 {
+    padding-top: 50px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+}
+
+.rules .rule p {
+    padding-left: 30px;
+}
+
+.rules .rule img {
+    position: absolute;
+
+}
+
+.rules .book_img {
+    transform: translateY(44.1%);
+
 }
