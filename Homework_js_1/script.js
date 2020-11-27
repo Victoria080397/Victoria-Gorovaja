@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 //Написати фунцію аргументом якої буде чотирицифрове число і ця функція буде повертати суму цифр цього числа(Наприклад для числа 5382 сума цифр буде 18); Для визначення цілої частини користуйтесь Math.floor()
 
 //function Summ(a) {
@@ -190,3 +191,28 @@ console.log(SquareRoot([4, 9, 16, 25, 36, 49, 64]));
 //}
 //
 //console.log(Array([4, 2, 5, 0, 10], 3));
+=======
+function Summ(a) {
+    //a=3579
+    let sum = 0;
+    sum += a % 10; //3579/10=357.9   9
+    a = Math.floor(a / 10); //3579/10=357.9   a=357
+    sum += a % 10; //357/10=35.7   7 sum = 9 + 7
+    a = Math.floor(a / 10); //a=35
+    sum += a % 10; // 5
+    a = Math.floor(a / 10); //a=3
+    sum += a;
+    return sum;
+}
+
+function Average(a) {
+    let sum = 0;
+    for (i = 0; i < a.length; i++) {
+        sum += a[i];
+    }
+    let avr = sum / a.length;
+    return avr;
+}
+let arr = Average([25, 40, 35, 60]);
+console.log(arr);
+>>>>>>> Stashed changes
