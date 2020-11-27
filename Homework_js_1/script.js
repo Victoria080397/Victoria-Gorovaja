@@ -157,26 +157,38 @@
 //
 //Задача 
 //Напишите решение, которое вычисляет сумму квадратных корней для всех чётных чисел целочисленного массива.
-function SquareRoot(a, b) {
-    let arr = [];
-    let sum = 0;
-    for (i = 0; i <= a.length; i++) {
-        if (a[i] % 2 == 0) {
-            arr.push(a[i]); //arr[4,2,16,10]
-        }
-        for (j = 0; j < arr.length; j++) {
-            if (arr[j] ** b == arr[j]) {
-                sum += arr[j];
-            }
-        }
-    }
-    return sum;
-}
-
-console.log(SquareRoot([4, 2, 5, 19, 13, 16, 10], 2));
+//function SquareRoot(a, b) {
+//    let arr = [];
+//    let sum = 0;
+//    for (i = 0; i <= a.length; i++) {
+//        if (a[i] % 2 == 0) {
+//            arr.push(a[i]); //arr[4,2,16,10]
+//        }
+//        for (j = 0; j < arr.length; j++) {
+//            if (arr[j] ** b == arr[j]) {
+//                sum += arr[j];
+//            }
+//        }
+//    }
+//    return sum;
+//}
+//
+//console.log(SquareRoot([4, 2, 5, 19, 13, 16, 10], 2));
 
 //
 //
 //
 //Дан массив с элементами 4, 2, 5, 19, 13, 0, 10. Найдите квадратный корень из суммы кубов его элементов.Для решения воспользуйтесь циклом
 //for
+
+function Array(a, b) {
+    let sum = 0;
+    let sqr = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i] ** b; // 1197
+        sqr = Math.sqrt(sum); //34.597687784012386
+    }
+    return sqr;
+}
+
+console.log(Array([4, 2, 5, 0, 10], 3));

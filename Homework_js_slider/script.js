@@ -1,15 +1,8 @@
 $('.slider').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
-    paddingLeft: '50px',
-    paddingRight: '50px',
-//    variableWidth: true,
-//    adaptiveHeight: true,
-
-    //    fade: true,
-    //    cssEase: 'linear',
+    fade: true,
     nextArrow: '<span class="next"></span>',
     prevArrow: '<span class="prev"></span>'
 });
