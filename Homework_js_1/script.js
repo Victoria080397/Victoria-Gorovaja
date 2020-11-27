@@ -157,23 +157,21 @@
 //
 //Задача 
 //Напишите решение, которое вычисляет сумму квадратных корней для всех чётных чисел целочисленного массива.
-function SquareRoot(a, b) {
+function SquareRoot(a) {
     let arr = [];
     let sum = 0;
     for (i = 0; i <= a.length; i++) {
         if (a[i] % 2 == 0) {
             arr.push(a[i]); //arr[4,2,16,10]
         }
-        for (j = 0; j < arr.length; j++) {
-            if (arr[j] ** b == arr[j]) {
-                sum += arr[j];
-            }
-        }
+    }
+    for (j = 0; j < arr.length; j++) {
+        sum+= Math.sqrt(arr[j]);
     }
     return sum;
 }
 
-console.log(SquareRoot([4, 2, 5, 19, 13, 16, 10], 2));
+console.log(SquareRoot([4, 9, 16, 25, 36, 49, 64]));
 
 //
 //
