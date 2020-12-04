@@ -919,3 +919,107 @@ footer .social_icons a path {
     transform: translateY(44.1%);
 
 }
+
+.books {
+    background-color: #2F2E2F;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+
+.books h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+    position: relative;
+}
+
+.books .brown_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-top: 60px;
+}
+
+.books .slide {
+    padding: 20px;
+}
+
+.books .slide p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.books .slide h5 {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 133%;
+    color: #fff;
+}
+
+.books .slide span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80%;
+    color: #fff;
+}
+
+.next {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 80%;
+    left: 900px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.next::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%) rotate(-45deg);
+
+}
+
+.prev {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 105%;
+    right: 0px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.prev::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%) rotate(45deg);
+
+}
