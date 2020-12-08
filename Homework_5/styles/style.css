@@ -720,7 +720,7 @@ header .transparent_button {
     width: 1170px;
     height: 556px;
     background-color: #fff;
-    /*    border: 1px solid black;*/
+    border: 2px solid rgba(0, 0, 0, .1);
     border-radius: 4px;
 }
 
@@ -729,11 +729,12 @@ header .transparent_button {
     width: 1126px;
     height: 547px;
     border-radius: 4px;
-    background-color: green;
+    border: 2px solid rgba(0, 0, 0, .1);
+    background-color: color: #fff;
     position: absolute;
     top: 0;
     transform: translateY(3%) translateX(20px);
-    z-index: -5;
+    z-index: -1;
 
 }
 
@@ -940,6 +941,8 @@ footer .social_icons a path {
     align-items: center;
     width: 300px;
     margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .books .slide {
@@ -976,12 +979,20 @@ footer .social_icons a path {
     color: #fff;
 }
 
+.books .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .next {
     width: 70px;
     height: 70px;
     position: absolute;
+    /*
     top: 80%;
     left: 900px;
+*/
     background-color: transparent;
     cursor: pointer;
     z-index: 5;
@@ -994,8 +1005,10 @@ footer .social_icons a path {
     position: absolute;
     border-bottom: 5px solid #fff;
     border-right: 5px solid #fff;
+    /*
     top: 50%;
     left: 50%;
+*/
     transform: translate(-60%, -60%) rotate(-45deg);
 
 }
@@ -1004,9 +1017,11 @@ footer .social_icons a path {
     width: 70px;
     height: 70px;
     position: absolute;
+    /*
     top: 105%;
     right: 0px;
-    background-color: #fff;
+*/
+    background-color: transparent;
     cursor: pointer;
     z-index: 5;
 }
@@ -1016,10 +1031,12 @@ footer .social_icons a path {
     width: 30px;
     height: 30px;
     position: absolute;
-    border-bottom: 2px solid green;
-    border-left: 2px solid green;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+    /*
     top: 50%;
     left: 50%;
+*/
     transform: translate(-60%, -60%) rotate(45deg);
 
 }
